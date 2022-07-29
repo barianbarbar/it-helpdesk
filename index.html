@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>IT Helpdesk</title>
+</head>
+<body>
+    <div class="container">
+        <h1 class="title">it helpdeks</h1>
+        <p class="alert success">Data Berhasil Masuk...</p>
+        <p class="alert failed">Data Gagal Masuk...</p>
+        <form name="submit-to-spreadsheet" class="form-group">
+            <div class="form-control">
+                <label for="jenis" class="form-label">jenis</label>
+                <input type="text" name="Jenis Request" id="jenis" class="form-input" placeholder="Hardware" required>
+            </div>
+            <div class="form-control">
+                <label for="dept" class="form-label">dept dan no unit</label>
+                <input type="text" name="Dept dan No Unit" id="dept" placeholder="IT" class="form-input" required>
+            </div>
+            <div class="form-control">
+                <label for="request-by" class="form-label">request by</label>
+                <input type="text" name="Request By" id="request-by" placeholder="John Doe" class="form-input" required>
+            </div>
+            <div class="form-control">
+                <label for="tanggal" class="form-label">tanggal</label>
+                <input type="date" name="Tanggal" id="tanggal" class="form-input" required>
+            </div>
+            <div class="form-control">
+                <label for="waktu" class="form-label">waktu</label>
+                <div class="form-input time">
+                    <p>dari</p>
+                    <input type="time" name="from" id="from" class="form-input-time" required>
+                    <p>sampai</p>
+                    <input type="time" name="to" id="to" class="form-input-time" required>
+                    <input type="hidden" name="Waktu" id="waktu" value="">
+                </div>
+            </div>
+            <div class="form-control">
+                <label for="service" class="form-label">servise</label>
+                <input type="text" name="Servise" id="service" placeholder="Melakukan perbaikan..." class="form-input" required>
+            </div>
+            <div class="form-control">
+                <label for="keterangan" class="form-label">keterangan</label>
+                <input type="text" name="Keterangan" id="keterangan" class="form-input" placeholder="Selesai" required>
+            </div>
+            <div class="form-control">
+                <label for="nama" class="form-label">nama staff</label>
+                <input type="text" name="Staff Support" id="nama" class="form-input" placeholder="John Doe" required>
+            </div>
+            <button type="submit">kirim</button>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
