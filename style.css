@@ -131,7 +131,7 @@ button[type="submit"]{
 }
 
 .success {
-    background-color: var(--blue);
+    background-color: var(--teal);
 }
 
 .failed{
