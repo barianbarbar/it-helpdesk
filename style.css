@@ -81,6 +81,7 @@ html {
 
 .form-input-time{
     border: 2px solid #E8E8E8;
+    background-color: rgb(255, 255, 255);
 }
 
 .form-input.time p {
